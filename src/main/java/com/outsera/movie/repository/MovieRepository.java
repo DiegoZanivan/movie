@@ -9,5 +9,7 @@ public interface MovieRepository extends Repository<Movie, Integer> {
 
     List<Movie> findAll();
 
+    List<Movie> findAllByWinnerOrderByProducers(boolean winner);
+
     List<Movie> findByWinnerOrderByYearLaunchAsc(boolean winner);
 }

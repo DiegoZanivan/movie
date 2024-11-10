@@ -35,7 +35,7 @@ public class MovieV1ControllerIT {
     public void getAwards_shouldReturnOk_always() throws Exception {
         mockMvc.perform(get("/v1/movies/award-interval"))
                 .andExpect(status().isOk())
-                .andExpect(content().json("{\"min\":[{\"producer\":\"Joel Silver\",\"interval\":1,\"previousWin\":1990,\"followingWin\":1991}],\"max\":[{\"producer\":\"Buzz Feitshans\",\"interval\":9,\"previousWin\":1985,\"followingWin\":1994}]}"));
+                .andExpect(content().json("{\"min\":[{\"producer\":\"Joel Silver\",\"interval\":1,\"previousWin\":1990,\"followingWin\":1991}],\"max\":[{\"producer\":\"Matthew Vaughn\",\"interval\":13,\"previousWin\":2002,\"followingWin\":2015}]}"));
     }
 
 }
